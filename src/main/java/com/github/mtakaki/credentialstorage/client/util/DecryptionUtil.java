@@ -105,6 +105,26 @@ public class DecryptionUtil {
         return new SecretKeySpec(decryptedSymmetricKey, SYMMETRIC_KEY_ALGORITHM);
     }
 
+    /**
+     * Decrypts the given base64 encoded encrypted text using the symmetric key.
+     *
+     * @param secretKey
+     *            Symmetric key used to decrypt the incoming text.
+     * @param base64EncryptedText
+     *            Base64 encoded encrypted text.
+     * @return The text decrypted.
+     * @throws NoSuchAlgorithmException
+     *             Thrown if AES algorithm is not available.
+     * @throws NoSuchPaddingException
+     *             Thrown if PKCS5 padding is not available.
+     * @throws InvalidKeyException
+     *             Thrown if the symmetric key is invalid.
+     * @throws IllegalBlockSizeException
+     *             Thrown if the incoming string being decoded is too long to be
+     *             decrypted.
+     * @throws BadPaddingException
+     *             Thrown if the padding is incorrect.
+     */
     public String decryptText(final SecretKey secretKey, final String base64EncryptedText)
             throws NoSuchAlgorithmException, NoSuchPaddingException, InvalidKeyException,
             IllegalBlockSizeException, BadPaddingException {
