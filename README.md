@@ -1,6 +1,8 @@
 #Status
 ![Build Status](https://codeship.com/projects/f0c2a400-c5ae-0133-5e12-4e8753dd3f97/status?branch=master)
 [![Coverage Status](https://coveralls.io/repos/github/mtakaki/CredentialStorageServiceClient/badge.svg?branch=master)](https://coveralls.io/github/mtakaki/CredentialStorageServiceClient?branch=master)
+[![Download](https://maven-badges.herokuapp.com/maven-central/com.github.mtakaki/credential-storage-client/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.github.mtakaki/credential-storage-client)
+[![Javadoc](https://javadoc-emblem.rhcloud.com/doc/com.github.mtakaki/credential-storage-client/badge.svg)](http://www.javadoc.io/doc/com.github.mtakaki/credential-storage-client)
 
 # CredentialStorageServiceClient
 Java client for [credential storage service](https://github.com/mtakaki/CredentialStorageService). This project can be used as a stand-alone shell client or as a client library.
@@ -17,7 +19,7 @@ $ openssl pkcs8 -topk8 -inform PEM -outform DER -in id_rsa -nocrypt > private_ke
 $ openssl rsa -in id_rsa -out public_key.der -outform DER -pubout
 ```
 
-The private key is never sent to the server, only the public key. The private key is used to decrypt the incoming data.
+The private key is never sent to the server, only the public key. The private key is only used to decrypt the incoming data.
 
 ## Stand-alone client
 
