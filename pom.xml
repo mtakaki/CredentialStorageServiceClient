@@ -67,13 +67,6 @@
             <version>2.4</version>
         </dependency>
 
-        <!-- Dependency injection -->
-        <dependency>
-            <groupId>org.jodd</groupId>
-            <artifactId>jodd-petite</artifactId>
-            <version>3.6.6</version>
-        </dependency>
-
         <!-- Auxiliary library -->
         <dependency>
             <groupId>org.apache.commons</groupId>
@@ -81,11 +74,18 @@
             <version>3.4</version>
         </dependency>
 
+        <!-- Tiny utility class -->
+        <dependency>
+            <groupId>org.jodd</groupId>
+            <artifactId>jodd-core</artifactId>
+            <version>3.6.7</version>
+        </dependency>
+
         <!-- Avoids boilerplate code -->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.16.6</version>
+            <version>1.16.8</version>
             <scope>provided</scope>
         </dependency>
 
@@ -104,25 +104,18 @@
             <version>4.12</version>
             <scope>test</scope>
         </dependency>
-        <!-- Mockito for our mocks -->
-        <dependency>
-            <groupId>org.mockito</groupId>
-            <artifactId>mockito-all</artifactId>
-            <version>1.10.19</version>
-            <scope>test</scope>
-        </dependency>
         <!-- AssertJ to have proper assertions -->
         <dependency>
             <groupId>org.assertj</groupId>
             <artifactId>assertj-core</artifactId>
-            <version>3.2.0</version>
+            <version>3.3.0</version>
             <scope>test</scope>
         </dependency>
         <!-- Our service we'll use for integration test -->
         <dependency>
             <groupId>com.github.mtakaki</groupId>
             <artifactId>credential-storage</artifactId>
-            <version>0.0.2-SNAPSHOT</version>
+            <version>0.0.2</version>
             <scope>test</scope>
         </dependency>
         <!-- We need dropwizard testing library to spawn the service in the 

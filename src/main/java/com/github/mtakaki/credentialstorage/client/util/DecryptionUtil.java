@@ -23,7 +23,6 @@ import javax.crypto.spec.SecretKeySpec;
 import org.apache.commons.io.IOUtils;
 import org.apache.commons.lang3.StringUtils;
 
-import jodd.petite.meta.PetiteBean;
 import jodd.util.Base64;
 
 /**
@@ -33,7 +32,6 @@ import jodd.util.Base64;
  * @author mtakaki
  *
  */
-@PetiteBean
 public class DecryptionUtil {
     private static final String ASYMMETRIC_CIPHER = "RSA/ECB/PKCS1Padding";
     private static final String ASYMMETRIC_KEY_ALGORITHM = "RSA";
